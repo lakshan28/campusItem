@@ -8,6 +8,7 @@ const ProfileSchema = new Schema({
     ref: "users"
   },
   handle: {
+    //name
     type: String,
     required: true
   },
@@ -19,7 +20,9 @@ const ProfileSchema = new Schema({
     type: String
   },
   name: {
-    type: String
+    // sell item/hire student
+    type: String,
+    required: true
   },
   location: {
     type: String
@@ -29,10 +32,12 @@ const ProfileSchema = new Schema({
     type: String
   },
   status: {
+    // Item or job field
     type: String,
     required: true
   },
   feild: {
+    //price
     type: String
   },
 
